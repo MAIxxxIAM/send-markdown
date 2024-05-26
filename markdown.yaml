@@ -13,16 +13,18 @@ markdown: # markdown默认模板(含图片)
     - skill3 # 文本插值6
     - skill4 # 文本插值7
 textMarkdown: # markdown默认模板(不含图片)
-  id: '111111' # 模板id
-  title: name # 标题插值
+  id: '102072441_1705039965' # 模板id
+  title: text1 # 标题插值
   text:
-    - text1 # 文本插值1
     - text2 # 文本插值2
     - text3 # 文本插值3
     - text4 # 文本插值4
     - text5 # 文本插值5
     - text6 # 文本插值6
     - text7 # 文本插值7
+    - text8 # 文本插值8
+    - text9 # 文本插值9
+    - text10 # 文本插值10
 
 ## 以下为自定义模板
 宝可梦签到: 

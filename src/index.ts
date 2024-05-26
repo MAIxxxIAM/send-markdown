@@ -35,14 +35,14 @@ class sendMarkdownServer extends Service {
     super(ctx, 'sendMarkdown', true)
   }
   async send(session: Session, markdown: string,buttons?:QQ_Buttons,eventId = null,command?: string) {
-    await toSendMarkdown(this.ctx,markdown,buttons=null,eventId = null, command)
+    await toSendMarkdown(this.ctx,markdown,session,buttons=null,eventId = null, command)
   }
 }
 
 export function apply(ctx: Context) {
   ctx.plugin(sendMarkdownServer)
 
-  ctx.command('sendmd <markdown>', '发送markdown消息').action(async ({ session }, markdown) => {
+  ctx.command('sendmd [markdown:text]', '发送markdown消息').action(async ({ session }, markdown) => {
     await ctx.sendMarkdown.send(session, markdown)
   })
 }
